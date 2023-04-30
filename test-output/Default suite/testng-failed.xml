@@ -5,7 +5,8 @@
     <classes>
       <class name="testEndPoints.MobileStoreEndPointTests">
         <methods>
-          <include name="PrintResponse"/>
+          <include name="testCreateProducts"/>
+          <include name="testLoginUser"/>
         </methods>
       </class> <!-- testEndPoints.MobileStoreEndPointTests -->
     </classes>

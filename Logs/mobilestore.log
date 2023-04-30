@@ -537,3 +537,5 @@ alt-svc=h3=":443"; ma=86400, h3-29=":443"; ma=86400
 13:50:54[main] INFO  mobilestore - *****testDeleteProduct*****
 13:56:46[main] INFO  mobilestore - *****testRegisterUser*****
 13:56:47[main] INFO  mobilestore - *****User Payload Created *****
+14:40:22[main] INFO  mobilestore - *****testLoginUser*****
+14:42:12[main] INFO  mobilestore - *****testLoginUser*****

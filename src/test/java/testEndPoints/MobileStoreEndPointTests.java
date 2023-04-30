@@ -17,6 +17,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.github.javafaker.Faker;
 
 import io.restassured.internal.path.json.mapping.JsonObjectDeserializer;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import mobileStoreEndPoints.mobilestoreEndPoints;
 import payload.Products;
@@ -101,7 +102,7 @@ public class MobileStoreEndPointTests extends ListenerTest{
 		Response response = mobilestoreEndPoints.createProducts(prod);
 		Awaitility.await().atMost(Duration.ONE_MINUTE).pollInterval(Duration.FIVE_SECONDS)
         .until(() -> response.statusCode() == 201);
-		
+		response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("product-schema.json"));
 		response.then().log().all();
 		loger.log(Level.INFO, "*****Validated Status Code for create Products *****", lineSeparator);
 		loger.log(Level.INFO, response.body().asPrettyString(),lineSeparator);
@@ -122,6 +123,7 @@ public class MobileStoreEndPointTests extends ListenerTest{
 		Response response = mobilestoreEndPoints.getProducts(name);
 		response.then().assertThat().body("name",hasItems(name));
 		response.then().log().all();
+		
 		loger.log(Level.INFO, "*****Validated Products has name given by Data Prodiver *****", lineSeparator);
 		loger.log(Level.INFO, response.body().asPrettyString(),lineSeparator);
 		
