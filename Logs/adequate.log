@@ -1,66 +1,23 @@
-11:46:34[main] INFO  adequate - *****User Payload created for CreateUser *****
-11:46:37[main] INFO  adequate - *****Post Request Send to createUser *****
-11:46:38[main] INFO  adequate - *****User Details Saved to createUser *****
-12:40:29[main] INFO  adequate - *****User Payload Created*****
-12:40:31[main] INFO  adequate - *****Post Request Send to register api*****
-12:40:32[main] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
-12:52:31[main] INFO  adequate - *****User Payload Created*****
-12:52:34[main] INFO  adequate - *****Post Request Send to register api*****
-12:52:35[main] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
-12:52:35[main] INFO  adequate - *****Login User Payload created *****
-12:52:35[main] INFO  adequate - *****Login User Payload Send to login api *****
-12:52:35[main] INFO  adequate - *****User Details Saved to loginUser.txt *****
-12:52:35[main] INFO  adequate - *****User Payload created for CreateUser *****
-12:52:36[main] INFO  adequate - *****Post Request Send to createUser *****
-12:52:36[main] INFO  adequate - *****User Details Saved to createUser *****
-12:52:36[main] INFO  adequate - *****Validated getUser*****
-12:52:36[main] INFO  adequate - *****Post Request Send to login User *****
-12:52:36[main] INFO  adequate - *****Validated Invalid User Login *****
-13:06:34[main] INFO  adequate - *****User Payload Created*****
-13:06:37[main] INFO  adequate - *****Post Request Send to register api*****
-13:06:38[main] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
-13:06:38[main] INFO  adequate - *****Login User Payload created *****
-13:06:39[main] INFO  adequate - *****Login User Payload Send to login api *****
-13:06:39[main] INFO  adequate - *****User Details Saved to loginUser.txt *****
-13:06:39[main] INFO  adequate - *****User Payload created for CreateUser *****
-13:06:39[main] INFO  adequate - *****Post Request Send to createUser *****
-13:06:39[main] INFO  adequate - *****User Details Saved to createUser *****
-13:06:40[main] INFO  adequate - *****Validated getUser*****
-13:06:40[main] INFO  adequate - *****Post Request Send to login User *****
-13:06:40[main] INFO  adequate - *****Validated Invalid User Login *****
-13:16:45[main] INFO  adequate - *****User Payload Created*****
-13:16:48[main] INFO  adequate - *****Post Request Send to register api*****
-13:16:49[main] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
-13:16:49[main] INFO  adequate - *****Login User Payload created *****
-13:16:49[main] INFO  adequate - *****Login User Payload Send to login api *****
-13:16:50[main] INFO  adequate - *****User Details Saved to loginUser.txt *****
-13:16:50[main] INFO  adequate - *****User Payload created for CreateUser *****
-13:16:50[main] INFO  adequate - *****Post Request Send to createUser *****
-13:16:50[main] INFO  adequate - *****User Details Saved to createUser *****
-13:16:50[main] INFO  adequate - *****Validated getUser*****
-13:16:51[main] INFO  adequate - *****Post Request Send to login User *****
-13:16:51[main] INFO  adequate - *****Validated Invalid User Login *****
-13:44:31[main] INFO  adequate - *****User Payload Created*****
-13:44:34[main] INFO  adequate - *****Post Request Send to register api*****
-13:44:35[main] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
-13:44:35[main] INFO  adequate - *****Login User Payload created *****
-13:44:36[main] INFO  adequate - *****Login User Payload Send to login api *****
-13:44:36[main] INFO  adequate - *****User Details Saved to loginUser.txt *****
-13:44:36[main] INFO  adequate - *****User Payload created for CreateUser *****
-13:44:36[main] INFO  adequate - *****Post Request Send to createUser *****
-13:44:36[main] INFO  adequate - *****User Details Saved to createUser *****
-13:44:37[main] INFO  adequate - *****Validated getUser*****
-13:44:37[main] INFO  adequate - *****Post Request Send to login User *****
-13:44:37[main] INFO  adequate - *****Validated Invalid User Login *****
-13:49:31[main] INFO  adequate - *****User Payload Created*****
-13:49:34[main] INFO  adequate - *****Post Request Send to register api*****
-13:49:35[main] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
-13:49:35[main] INFO  adequate - *****Login User Payload created *****
-13:49:36[main] INFO  adequate - *****Login User Payload Send to login api *****
-13:49:36[main] INFO  adequate - *****User Details Saved to loginUser.txt *****
-13:49:36[main] INFO  adequate - *****User Payload created for CreateUser *****
-13:49:36[main] INFO  adequate - *****Post Request Send to createUser *****
-13:49:36[main] INFO  adequate - *****User Details Saved to createUser *****
-13:49:37[main] INFO  adequate - *****Validated getUser*****
-13:49:37[main] INFO  adequate - *****Post Request Send to login User *****
-13:49:37[main] INFO  adequate - *****Validated Invalid User Login *****
+23:45:38[main] INFO  adequate - *****User Payload Created*****
+23:45:42[main] INFO  adequate - *****Post Request Send to register api*****
+23:45:44[main] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
+23:45:44[main] INFO  adequate - *****Login User Payload created *****
+23:45:45[main] INFO  adequate - *****Login User Payload Send to login api *****
+23:45:45[main] INFO  adequate - *****User Details Saved to loginUser.txt *****
+23:45:45[main] INFO  adequate - *****User Payload created for CreateUser *****
+23:45:45[main] INFO  adequate - *****Post Request Send to createUser *****
+23:45:46[main] INFO  adequate - *****User Details Saved to createUser *****
+23:45:46[main] INFO  adequate - *****Validated getUser*****
+23:45:46[main] INFO  adequate - *****Post Request Send to login User *****
+23:45:46[main] INFO  adequate - *****Validated Invalid User Login *****
+23:55:46[TestNG-test=Test-1] INFO  adequate - *****User Payload Created*****
+23:55:49[TestNG-test=Test-1] INFO  adequate - *****Post Request Send to register api*****
+23:55:51[TestNG-test=Test-1] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
+23:55:51[TestNG-test=Test-1] INFO  adequate - *****Login User Payload created *****
+23:55:51[TestNG-test=Test-1] INFO  adequate - *****Login User Payload Send to login api *****
+23:55:51[TestNG-test=Test-1] INFO  adequate - *****User Payload created for CreateUser *****
+23:55:51[TestNG-test=Test-1] INFO  adequate - *****Post Request Send to createUser *****
+23:55:51[TestNG-test=Test-1] INFO  adequate - *****User Details Saved to createUser *****
+23:55:52[TestNG-test=Test-1] INFO  adequate - *****Validated getUser*****
+23:55:52[TestNG-test=Test-1] INFO  adequate - *****Post Request Send to login User *****
+23:55:52[TestNG-test=Test-1] INFO  adequate - *****Validated Invalid User Login *****

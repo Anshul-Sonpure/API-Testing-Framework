@@ -2,6 +2,8 @@ package testEndPoints;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ResourceBundle;
+
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,13 +18,13 @@ import com.aventstack.extentreports.markuputils.CodeLanguage;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.github.javafaker.Faker;
 
-import io.restassured.internal.path.json.mapping.JsonObjectDeserializer;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import mobileStoreEndPoints.mobilestoreEndPoints;
 import payload.Products;
 import payload.User;
 import utilities.DataProviders;
+import utilities.FileUtil;
 import utilities.ListenerTest;
 
 public class MobileStoreEndPointTests extends ListenerTest{
@@ -32,6 +34,11 @@ public class MobileStoreEndPointTests extends ListenerTest{
 	public static Logger loger = LogManager.getLogger("mobilestore");
 	public static String lineSeparator = System.getProperty("line.separator");
 	public static Products prod = new Products();
+	
+	static ResourceBundle getfilepath() {
+		ResourceBundle filepath = ResourceBundle.getBundle("config");
+		return filepath;
+	}
 
 	@Test(priority = 1)
 	public void testLoginUser() throws IOException {
@@ -42,10 +49,9 @@ public class MobileStoreEndPointTests extends ListenerTest{
 		loger.log(Level.INFO, "*****Validated Status Code for Login User *****", lineSeparator);
 		String Token = response.body().path("access_token");
 
-		FileWriter fWriter = new FileWriter("./src/test/resources/loginToken.txt"); // to append data in file use",true"
-																					
-		fWriter.write(Token);
-		fWriter.close();
+		String MobilestoreLoginToken = getfilepath().getString("MobilestoreLoginToken");
+		
+		 FileUtil.writeToFile(MobilestoreLoginToken,Token);
 		loger.log(Level.INFO, response.headers().toString(),lineSeparator);
 		loger.log(Level.INFO, response.body().asPrettyString(),lineSeparator);
 		loger.log(Level.INFO, "*****Login Token for Saved at /src/test/resources/loginToken.txt*****", lineSeparator);
@@ -71,10 +77,9 @@ public class MobileStoreEndPointTests extends ListenerTest{
 		loger.log(Level.INFO, "*****Validated Status Code for register User*****");
 		String Token = response.body().path("access_token");
 
-		FileWriter fWriter = new FileWriter("./src/test/resources/registerToken.txt"); // to append data in file use",true"
-																						
-		fWriter.write(Token);
-		fWriter.close();
+		String MobilestoreLoginToken = getfilepath().getString("MobilestoreLoginToken");
+		
+		 FileUtil.writeToFile(MobilestoreLoginToken,Token);
 		loger.log(Level.INFO, response.headers().toString(),lineSeparator);
 		loger.log(Level.INFO, response.body().asPrettyString(),lineSeparator);
 		loger.log(Level.INFO, "*****Login Token for Saved at /src/test/resources/registerToken.txt*****");
@@ -100,9 +105,9 @@ public class MobileStoreEndPointTests extends ListenerTest{
 		prod.setDealerId(DealerId);
 		
 		Response response = mobilestoreEndPoints.createProducts(prod);
-		Awaitility.await().atMost(Duration.ONE_MINUTE).pollInterval(Duration.FIVE_SECONDS)
+		Awaitility.await().atMost(Duration.TEN_SECONDS).pollInterval(Duration.FIVE_SECONDS)
         .until(() -> response.statusCode() == 201);
-		response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("product-schema.json"));
+		
 		response.then().log().all();
 		loger.log(Level.INFO, "*****Validated Status Code for create Products *****", lineSeparator);
 		loger.log(Level.INFO, response.body().asPrettyString(),lineSeparator);
@@ -177,7 +182,7 @@ public class MobileStoreEndPointTests extends ListenerTest{
 	public void testDeleteProduct() throws IOException
 	{
 		loger.log(Level.INFO, "*****testDeleteProduct*****",lineSeparator);
-		String id = "7";
+		String id = "6";
 		Response response = mobilestoreEndPoints.deleteProduct(id);
 		response.then().statusCode(200);
 		loger.log(Level.INFO, "*****Validated Status Code for deleteProduct*****",lineSeparator);

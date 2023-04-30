@@ -1,10 +1,10 @@
 package testEndPoints;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ResourceBundle;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -20,6 +20,7 @@ import com.github.javafaker.Faker;
 import adequateShopEndPoints.AdequateEndpoints;
 import io.restassured.response.Response;
 import payload.User;
+import utilities.FileUtil;
 import utilities.ListenerTest;
 
 public class AdequateEndpointTests extends ListenerTest {
@@ -30,6 +31,10 @@ public class AdequateEndpointTests extends ListenerTest {
    
     public static Logger loger = LogManager.getLogger("adequate");
   
+    static ResourceBundle getfilepath() {
+		ResourceBundle filepath = ResourceBundle.getBundle("config");
+		return filepath;
+	}
     
     @Test(priority=1)
     public static void TestUserRegister() throws IOException
@@ -49,10 +54,13 @@ public class AdequateEndpointTests extends ListenerTest {
         User.email = response.body().path("data.Email");
         String userId = response.body().path("data.Id").toString();
         String Token = response.body().path("data.Token");
-        FileWriter fWriter = new FileWriter("./AdequateData/RegisterUser.txt"); // to append data in file use ",true"
-        fWriter.write("UserName:"+User.name+"\nUserEmail:"+User.email+"\nUserId:"+userId+"\nToken:"+Token+"\nPassword:"+User.password+"\n");
-
-        fWriter.close();
+        
+        String data = "UserName:"+User.name+"\nUserEmail:"+User.email+"\nUserId:"+userId+"\nToken:"+Token+"\nPassword:"+User.password+"\n";
+        
+        String AdequateRegisterUser = getfilepath().getString("AdequateRegisterUser");
+        
+        
+        FileUtil.writeToFile(AdequateRegisterUser,data);
       
         loger.log(Level.INFO, "*****User Details Saved to RegisterUser.txt *****");
         extentTest.info("Response body:");
@@ -80,10 +88,15 @@ public class AdequateEndpointTests extends ListenerTest {
     	Assert.assertEquals(response.body().path("message"), "success");
     	Assert.assertEquals(response.body().path("data.Id").toString(),logindata[2].toString().split("UserId:")[1].toString());
     	Assert.assertEquals(response.body().path("data.Name").toString(),logindata[0].toString().split("UserName:")[1].toString());
-    	FileWriter fWriter = new FileWriter("./AdequateData/loginUser.txt"); // to append data in file use ",true"
-        fWriter.write("UserName:"+User.name+"\nUserEmail:"+User.email+"\nToken:"+response.body().path("data.Token"));
-
-        fWriter.close();
+    	
+    	String data = "UserName:"+User.name+"\nUserEmail:"+User.email+"\nToken:"+response.body().path("data.Token");
+        
+        String AdequateloginUser = getfilepath().getString("AdequateloginUser");
+        
+        
+        FileUtil.writeToFile(AdequateloginUser,data);
+    	
+    	
         loger.log(Level.INFO, "*****User Details Saved to loginUser.txt *****");
         extentTest.info("Response body:");
         extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(response.asPrettyString(), CodeLanguage.JSON));
@@ -116,10 +129,15 @@ public class AdequateEndpointTests extends ListenerTest {
     	response.then().log().all();
     	Assert.assertEquals(response.statusCode(),201);
     	Assert.assertEquals("HTTP/1.1 201 Created",response.statusLine());
-    	FileWriter fWriter = new FileWriter("./AdequateData/createUser.txt"); // to append data in file use ",true"
-        fWriter.write("Userid:"+response.body().path("id")+"\nUserName:"+User.name+"\nUserEmail:"+User.email+"\nToken:"+response.body().path("data.Token"));
-
-        fWriter.close();
+    	
+    	String data = "Userid:"+response.body().path("id")+"\nUserName:"+User.name+"\nUserEmail:"+User.email+"\nToken:"+response.body().path("data.Token");
+        
+        String AdequatecreateUser = getfilepath().getString("AdequatecreateUser");
+        
+        
+        FileUtil.writeToFile(AdequatecreateUser,data);
+    	
+    	
         loger.log(Level.INFO, "*****User Details Saved to createUser *****");
         extentTest.info("Response body:");
         extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(response.asPrettyString(), CodeLanguage.JSON));

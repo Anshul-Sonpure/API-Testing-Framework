@@ -4,7 +4,7 @@
 <listeners>
   		<listener  class-name="utilities.ListenerTest" />
    </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="2" name="Test" parallel="classes">
     <classes>
       <class name="testEndPoints.AdequateEndpointTests"/>
       <class name="testEndPoints.MobileStoreEndPointTests"/>

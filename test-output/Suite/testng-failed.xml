@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="utilities.ListenerTest"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
       <class name="testEndPoints.MobileStoreEndPointTests">
         <methods>
@@ -14,6 +14,11 @@
           <include name="testLoginUser"/>
         </methods>
       </class> <!-- testEndPoints.MobileStoreEndPointTests -->
+      <class name="testEndPoints.AdequateEndpointTests">
+        <methods>
+          <include name="TestValidUserLogin"/>
+        </methods>
+      </class> <!-- testEndPoints.AdequateEndpointTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

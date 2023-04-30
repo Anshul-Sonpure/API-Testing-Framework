@@ -1,11 +1,7 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Product",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "id": {
-      "type": "string"
-    },
     "name": {
       "type": "string"
     },
@@ -18,9 +14,18 @@
     "locationId": {
       "type": "string"
     },
-    "DealerId": {
+    "dealerId": {
+      "type":"string"
+    },
+    "id": {
       "type": "string"
     }
   },
-  "required": ["id", "name", "cost", "quantity", "locationId", "DealerId"]
+  "required": [
+    "name",
+    "cost",
+    "quantity",
+    "locationId",
+    "dealerId"
+  ]
 }

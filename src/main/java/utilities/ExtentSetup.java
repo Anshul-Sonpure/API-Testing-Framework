@@ -16,7 +16,7 @@ public class ExtentSetup {
 	    
 	    public static ExtentReports initExtent() {
 	    	 extent = new ExtentReports();
-	         spark = new ExtentSparkReporter("test-output/Reports/extentreport_" + timeStamp + ".html");
+	         spark = new ExtentSparkReporter("./Reports/extentreport_" + timeStamp + ".html");
 	         extent.attachReporter(spark);
 	         extent.setSystemInfo("Operating System", System.getProperty("os.name"));
 	         extent.setSystemInfo("JVM", System.getProperty("java.runtime.version"));
