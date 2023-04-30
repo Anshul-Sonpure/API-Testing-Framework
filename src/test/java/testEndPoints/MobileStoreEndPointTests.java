@@ -16,6 +16,7 @@ import com.aventstack.extentreports.markuputils.CodeLanguage;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.github.javafaker.Faker;
 
+import io.restassured.internal.path.json.mapping.JsonObjectDeserializer;
 import io.restassured.response.Response;
 import mobileStoreEndPoints.mobilestoreEndPoints;
 import payload.Products;
@@ -61,8 +62,8 @@ public class MobileStoreEndPointTests extends ListenerTest{
 		userpayload.setPassword(faker.internet().password());
 		loger.log(Level.INFO, "*****User Payload Created *****");
 		
-		System.out.println(userpayload);
-		/*
+		
+		
 		Response response = mobilestoreEndPoints.registerUser(userpayload);
 		response.then().log().all();
 		response.then().statusCode(200);
@@ -82,7 +83,7 @@ public class MobileStoreEndPointTests extends ListenerTest{
 		extentTest.info("Response body:");
         extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(response.asPrettyString(), CodeLanguage.JSON));
         
-        */
+        
 	}
 
 	
