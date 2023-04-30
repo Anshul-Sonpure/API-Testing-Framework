@@ -52,3 +52,87 @@ alt-svc=h3=":443"; ma=86400, h3-29=":443"; ma=86400
     "cost": "70000",
     "id": 9
 }
+12:52:36[main] INFO  mobilestore - *****testLoginUser*****
+12:52:38[main] INFO  mobilestore - *****Validated Status Code for Login User *****
+12:52:38[main] INFO  mobilestore - Date=Sun, 30 Apr 2023 07:22:38 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=215
+Connection=keep-alive
+CF-Ray=7bfe08e56dc185cc-BOM
+Cache-Control=no-cache
+Content-Encoding=gzip
+ETag=W/"d7-tuzaT9RxbJUp1JkLRUdcPM2+sak"
+Expires=-1
+Vary=Accept-Encoding
+CF-Cache-Status=DYNAMIC
+access-control-allow-credentials=true
+pragma=no-cache
+x-powered-by=Express
+x-render-origin-server=Render
+Set-Cookie=__cf_bm=ZNCayPkkrA0fCVC7fRtaDNBNees7RtnaGp62gkKWvsQ-1682839358-0-AUzLoy5XBQuUrQC1uhHc7PM3MpIX1J9y/q46ImiqKeFIIMIzy/vo98OKcENM7nDxN3E6THyZAOFZSadis0DAG7A=; path=/; expires=Sun, 30-Apr-23 07:52:38 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None
+Server=cloudflare
+alt-svc=h3=":443"; ma=86400, h3-29=":443"; ma=86400
+12:52:38[main] INFO  mobilestore - {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pbHNvbkBlbWFpbC5jb20iLCJwYXNzd29yZCI6Im5pbHNvbiIsImlhdCI6MTY4MjgzOTM1OCwiZXhwIjoxNjgyODQyOTU4fQ.ImDqQxasKcGPnssI1AuoMim_v1TOFDAsGjyr6jww2q8"
+}
+12:52:38[main] INFO  mobilestore - *****Login Token for Saved at /src/test/resources/loginToken.txt*****
+12:52:38[main] INFO  mobilestore - *****testRegisterUser*****
+12:52:38[main] INFO  mobilestore - *****User Payload Created *****
+12:52:39[main] INFO  mobilestore - *****Validated Status Code for register User*****
+12:52:39[main] INFO  mobilestore - Date=Sun, 30 Apr 2023 07:22:39 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=236
+Connection=keep-alive
+CF-Ray=7bfe08eb086ff2c2-BOM
+Cache-Control=no-cache
+Content-Encoding=gzip
+ETag=W/"ec-NifbO9wAVKVzibeGoKHUGWSBpKY"
+Expires=-1
+Vary=Accept-Encoding
+CF-Cache-Status=DYNAMIC
+access-control-allow-credentials=true
+pragma=no-cache
+x-powered-by=Express
+x-render-origin-server=Render
+Set-Cookie=__cf_bm=wJRcx3Nej19s18bRIFGuwyYyYihuile_AHteL86O5K8-1682839359-0-AdkMtHVhSgZHf5okUivdnKQi+hVcevvopidz4Yg48C7isjZt6u0lBOId4asHwF/F6HxWxG1pXt8uI8ZtBoW0QAM=; path=/; expires=Sun, 30-Apr-23 07:52:39 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None
+Server=cloudflare
+alt-svc=h3=":443"; ma=86400, h3-29=":443"; ma=86400
+12:52:39[main] INFO  mobilestore - {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZGVuLmtyYWpjaWtAZ21haWwuY29tIiwicGFzc3dvcmQiOiI3dnNvMHdvOTNkc3l4NzkiLCJpYXQiOjE2ODI4MzkzNTksImV4cCI6MTY4Mjg0Mjk1OX0.SUO3URXuGZ-yd2hj3gPUSdPlkdaUNHmiyFEQNd7fgUE"
+}
+12:52:39[main] INFO  mobilestore - *****Login Token for Saved at /src/test/resources/registerToken.txt*****
+12:52:40[main] INFO  mobilestore - *****testCreateProducts*****
+12:52:51[main] INFO  mobilestore - *****testCreateProducts*****
+12:52:56[main] INFO  mobilestore - *****Validated Status Code for create Products *****
+12:52:56[main] INFO  mobilestore - {
+    "name": "Xiaomi 12 Pro 5G",
+    "cost": "50000",
+    "locationId": "3",
+    "dealerId": "3",
+    "quantity": "150",
+    "id": 7
+}
+12:52:56[main] INFO  mobilestore - *****testCreateProducts*****
+12:53:02[main] INFO  mobilestore - *****Validated Status Code for create Products *****
+12:53:02[main] INFO  mobilestore - {
+    "name": "Xiaomi 13 Pro 5G",
+    "cost": "70000",
+    "locationId": "2",
+    "dealerId": "2",
+    "quantity": "100",
+    "id": 8
+}
+12:53:02[main] INFO  mobilestore - *****testGetProduct*****
+12:53:03[main] INFO  mobilestore - *****Validated Status Code for GetProduct*****
+12:53:03[main] INFO  mobilestore - [
+    {
+        "id": 2,
+        "name": "Redmi 11 Prime 5G",
+        "cost": 13249,
+        "quantity": 2000,
+        "locationId": 2,
+        "DealerId": 2
+    }
+]
+12:53:03[main] INFO  mobilestore - *****testUpdateProduct*****
+12:53:04[main] INFO  mobilestore - *****testDeleteProduct*****

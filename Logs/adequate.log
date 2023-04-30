@@ -1,3 +1,18 @@
 11:46:34[main] INFO  adequate - *****User Payload created for CreateUser *****
 11:46:37[main] INFO  adequate - *****Post Request Send to createUser *****
 11:46:38[main] INFO  adequate - *****User Details Saved to createUser *****
+12:40:29[main] INFO  adequate - *****User Payload Created*****
+12:40:31[main] INFO  adequate - *****Post Request Send to register api*****
+12:40:32[main] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
+12:52:31[main] INFO  adequate - *****User Payload Created*****
+12:52:34[main] INFO  adequate - *****Post Request Send to register api*****
+12:52:35[main] INFO  adequate - *****User Details Saved to RegisterUser.txt *****
+12:52:35[main] INFO  adequate - *****Login User Payload created *****
+12:52:35[main] INFO  adequate - *****Login User Payload Send to login api *****
+12:52:35[main] INFO  adequate - *****User Details Saved to loginUser.txt *****
+12:52:35[main] INFO  adequate - *****User Payload created for CreateUser *****
+12:52:36[main] INFO  adequate - *****Post Request Send to createUser *****
+12:52:36[main] INFO  adequate - *****User Details Saved to createUser *****
+12:52:36[main] INFO  adequate - *****Validated getUser*****
+12:52:36[main] INFO  adequate - *****Post Request Send to login User *****
+12:52:36[main] INFO  adequate - *****Validated Invalid User Login *****
