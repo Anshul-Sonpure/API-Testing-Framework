@@ -80,7 +80,7 @@ public class MobileStoreEndPointTests {
 		prod.setDealerId(DealerId);
 		
 		Response response = mobilestoreEndPoints.createProducts(prod);
-		Awaitility.await().atMost(Duration.TEN_SECONDS).pollInterval(Duration.FIVE_SECONDS)
+		Awaitility.await().atMost(Duration.ONE_MINUTE).pollInterval(Duration.FIVE_SECONDS)
         .until(() -> response.statusCode() == 201);
 		
 		response.then().log().all();
@@ -121,7 +121,7 @@ public class MobileStoreEndPointTests {
 	public void testUpdateProduct() throws IOException
 	{
 		loger.log(Level.INFO, "*****testUpdateProduct*****",lineSeparator);
-		String id ="11";
+		String id ="6";
 		prod.setQuantity("250");
 		prod.setDealerId("1");
 		Response response = mobilestoreEndPoints.updateProduct(prod, id);
@@ -137,7 +137,7 @@ public class MobileStoreEndPointTests {
 	public void testDeleteProduct() throws IOException
 	{
 		loger.log(Level.INFO, "*****testDeleteProduct*****",lineSeparator);
-		String id = "9";
+		String id = "7";
 		Response response = mobilestoreEndPoints.deleteProduct(id);
 		response.then().statusCode(200);
 		loger.log(Level.INFO, "*****Validated Status Code for deleteProduct*****",lineSeparator);

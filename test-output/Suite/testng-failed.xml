@@ -10,9 +10,8 @@
         <methods>
           <include name="testDeleteProduct"/>
           <include name="testGetProducts"/>
-          <include name="testUpdateProduct"/>
-          <include name="testLoginUser"/>
           <include name="testCreateProducts" invocation-numbers="0"/>
+          <include name="testLoginUser"/>
         </methods>
       </class> <!-- testEndPoints.MobileStoreEndPointTests -->
     </classes>

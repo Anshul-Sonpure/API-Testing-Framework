@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="10" failed="3" skipped="1">
+<testng-results ignored="0" total="14" passed="11" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-30T12:52:31 IST" name="Suite" finished-at="2023-04-30T12:53:04 IST" duration-ms="33099">
+  <suite started-at="2023-04-30T13:16:44 IST" name="Suite" finished-at="2023-04-30T13:18:08 IST" duration-ms="83590">
     <groups>
     </groups>
-    <test started-at="2023-04-30T12:52:31 IST" name="Test" finished-at="2023-04-30T12:53:04 IST" duration-ms="33099">
+    <test started-at="2023-04-30T13:16:44 IST" name="Test" finished-at="2023-04-30T13:18:08 IST" duration-ms="83590">
       <class name="testEndPoints.AdequateEndpointTests">
-        <test-method signature="TestUserRegister()[pri:1, instance:testEndPoints.AdequateEndpointTests@1f9d6c7b]" started-at="2023-04-30T12:52:31 IST" name="TestUserRegister" finished-at="2023-04-30T12:52:35 IST" duration-ms="3719" status="PASS">
+        <test-method signature="TestUserRegister()[pri:1, instance:testEndPoints.AdequateEndpointTests@cda4919]" started-at="2023-04-30T13:16:44 IST" name="TestUserRegister" finished-at="2023-04-30T13:16:49 IST" duration-ms="4747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestUserRegister -->
-        <test-method signature="TestValidUserLogin()[pri:2, instance:testEndPoints.AdequateEndpointTests@1f9d6c7b]" started-at="2023-04-30T12:52:35 IST" name="TestValidUserLogin" finished-at="2023-04-30T12:52:35 IST" duration-ms="444" status="PASS">
+        <test-method signature="TestValidUserLogin()[pri:2, instance:testEndPoints.AdequateEndpointTests@cda4919]" started-at="2023-04-30T13:16:49 IST" name="TestValidUserLogin" finished-at="2023-04-30T13:16:50 IST" duration-ms="473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestValidUserLogin -->
-        <test-method signature="TestCreateUser()[pri:3, instance:testEndPoints.AdequateEndpointTests@1f9d6c7b]" started-at="2023-04-30T12:52:35 IST" name="TestCreateUser" finished-at="2023-04-30T12:52:36 IST" duration-ms="413" status="PASS">
+        <test-method signature="TestCreateUser()[pri:3, instance:testEndPoints.AdequateEndpointTests@cda4919]" started-at="2023-04-30T13:16:50 IST" name="TestCreateUser" finished-at="2023-04-30T13:16:50 IST" duration-ms="382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCreateUser -->
-        <test-method signature="TestgetUser()[pri:4, instance:testEndPoints.AdequateEndpointTests@1f9d6c7b]" started-at="2023-04-30T12:52:36 IST" name="TestgetUser" finished-at="2023-04-30T12:52:36 IST" duration-ms="307" status="PASS">
+        <test-method signature="TestgetUser()[pri:4, instance:testEndPoints.AdequateEndpointTests@cda4919]" started-at="2023-04-30T13:16:50 IST" name="TestgetUser" finished-at="2023-04-30T13:16:50 IST" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestgetUser -->
-        <test-method signature="TestInValidUserLogin()[pri:5, instance:testEndPoints.AdequateEndpointTests@1f9d6c7b]" started-at="2023-04-30T12:52:36 IST" name="TestInValidUserLogin" finished-at="2023-04-30T12:52:36 IST" duration-ms="292" status="PASS">
+        <test-method signature="TestInValidUserLogin()[pri:5, instance:testEndPoints.AdequateEndpointTests@cda4919]" started-at="2023-04-30T13:16:50 IST" name="TestInValidUserLogin" finished-at="2023-04-30T13:16:51 IST" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestInValidUserLogin -->
       </class> <!-- testEndPoints.AdequateEndpointTests -->
       <class name="testEndPoints.MobileStoreEndPointTests">
-        <test-method signature="testLoginUser()[pri:1, instance:testEndPoints.MobileStoreEndPointTests@757f675c]" started-at="2023-04-30T12:52:36 IST" name="testLoginUser" finished-at="2023-04-30T12:52:38 IST" duration-ms="1978" status="PASS">
+        <test-method signature="testLoginUser()[pri:1, instance:testEndPoints.MobileStoreEndPointTests@33a053d]" started-at="2023-04-30T13:16:51 IST" name="testLoginUser" finished-at="2023-04-30T13:16:53 IST" duration-ms="2027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginUser -->
-        <test-method signature="testRegisterUser()[pri:2, instance:testEndPoints.MobileStoreEndPointTests@757f675c]" started-at="2023-04-30T12:52:38 IST" name="testRegisterUser" finished-at="2023-04-30T12:52:39 IST" duration-ms="907" status="PASS">
+        <test-method signature="testRegisterUser()[pri:2, instance:testEndPoints.MobileStoreEndPointTests@33a053d]" started-at="2023-04-30T13:16:53 IST" name="testRegisterUser" finished-at="2023-04-30T13:16:53 IST" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterUser -->
-        <test-method signature="testCreateProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testEndPoints.MobileStoreEndPointTests@757f675c]" started-at="2023-04-30T12:52:40 IST" name="testCreateProducts" data-provider="Data" finished-at="2023-04-30T12:52:51 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="10637" status="FAIL">
+        <test-method signature="testCreateProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testEndPoints.MobileStoreEndPointTests@33a053d]" started-at="2023-04-30T13:16:54 IST" name="testCreateProducts" data-provider="Data" finished-at="2023-04-30T13:17:55 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="60763" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -67,10 +67,10 @@
           </params>
           <exception class="org.awaitility.core.ConditionTimeoutException">
             <message>
-              <![CDATA[Condition with testEndPoints.MobileStoreEndPointTests was not fulfilled within 10 seconds.]]>
+              <![CDATA[Condition with testEndPoints.MobileStoreEndPointTests was not fulfilled within 60 seconds.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.awaitility.core.ConditionTimeoutException: Condition with testEndPoints.MobileStoreEndPointTests was not fulfilled within 10 seconds.
+              <![CDATA[org.awaitility.core.ConditionTimeoutException: Condition with testEndPoints.MobileStoreEndPointTests was not fulfilled within 60 seconds.
 at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)
 at org.awaitility.core.CallableCondition.await(CallableCondition.java:79)
 at org.awaitility.core.CallableCondition.await(CallableCondition.java:27)
@@ -111,7 +111,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateProducts -->
-        <test-method signature="testCreateProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testEndPoints.MobileStoreEndPointTests@757f675c]" started-at="2023-04-30T12:52:51 IST" name="testCreateProducts" data-provider="Data" finished-at="2023-04-30T12:52:56 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="5615" status="PASS">
+        <test-method signature="testCreateProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testEndPoints.MobileStoreEndPointTests@33a053d]" started-at="2023-04-30T13:17:55 IST" name="testCreateProducts" data-provider="Data" finished-at="2023-04-30T13:18:01 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="5624" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -142,7 +142,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateProducts -->
-        <test-method signature="testCreateProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testEndPoints.MobileStoreEndPointTests@757f675c]" started-at="2023-04-30T12:52:56 IST" name="testCreateProducts" data-provider="Data" finished-at="2023-04-30T12:53:02 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="6066" status="PASS">
+        <test-method signature="testCreateProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testEndPoints.MobileStoreEndPointTests@33a053d]" started-at="2023-04-30T13:18:01 IST" name="testCreateProducts" data-provider="Data" finished-at="2023-04-30T13:18:06 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="5813" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -173,17 +173,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateProducts -->
-        <test-method signature="testGetProducts(java.lang.String)[pri:4, instance:testEndPoints.MobileStoreEndPointTests@757f675c]" started-at="2023-04-30T12:53:02 IST" name="testGetProducts" finished-at="2023-04-30T12:53:02 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser, testEndPoints.MobileStoreEndPointTests.testCreateProducts" duration-ms="0" status="SKIP">
+        <test-method signature="testGetProducts(java.lang.String)[pri:4, instance:testEndPoints.MobileStoreEndPointTests@33a053d]" started-at="2023-04-30T13:18:06 IST" name="testGetProducts" finished-at="2023-04-30T13:18:06 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser, testEndPoints.MobileStoreEndPointTests.testCreateProducts" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method testEndPoints.MobileStoreEndPointTests.testGetProducts() on instance testEndPoints.MobileStoreEndPointTests@757f675c depends on not successfully finished methods 
-[testEndPoints.MobileStoreEndPointTests.testLoginUser() on instance testEndPoints.MobileStoreEndPointTests@757f675c
-testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndPoints.MobileStoreEndPointTests@757f675c]]]>
+              <![CDATA[Method testEndPoints.MobileStoreEndPointTests.testGetProducts() on instance testEndPoints.MobileStoreEndPointTests@33a053d depends on not successfully finished methods 
+[testEndPoints.MobileStoreEndPointTests.testLoginUser() on instance testEndPoints.MobileStoreEndPointTests@33a053d
+testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndPoints.MobileStoreEndPointTests@33a053d]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testEndPoints.MobileStoreEndPointTests.testGetProducts() on instance testEndPoints.MobileStoreEndPointTests@757f675c depends on not successfully finished methods 
-[testEndPoints.MobileStoreEndPointTests.testLoginUser() on instance testEndPoints.MobileStoreEndPointTests@757f675c
-testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndPoints.MobileStoreEndPointTests@757f675c]
+              <![CDATA[java.lang.Throwable: Method testEndPoints.MobileStoreEndPointTests.testGetProducts() on instance testEndPoints.MobileStoreEndPointTests@33a053d depends on not successfully finished methods 
+[testEndPoints.MobileStoreEndPointTests.testLoginUser() on instance testEndPoints.MobileStoreEndPointTests@33a053d
+testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndPoints.MobileStoreEndPointTests@33a053d]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -209,20 +209,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetProducts -->
-        <test-method signature="testGetProduct()[pri:5, instance:testEndPoints.MobileStoreEndPointTests@757f675c]" started-at="2023-04-30T12:53:02 IST" name="testGetProduct" finished-at="2023-04-30T12:53:03 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="725" status="PASS">
+        <test-method signature="testGetProduct()[pri:5, instance:testEndPoints.MobileStoreEndPointTests@33a053d]" started-at="2023-04-30T13:18:06 IST" name="testGetProduct" finished-at="2023-04-30T13:18:07 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetProduct -->
-        <test-method signature="testUpdateProduct()[pri:6, instance:testEndPoints.MobileStoreEndPointTests@757f675c]" started-at="2023-04-30T12:53:03 IST" name="testUpdateProduct" finished-at="2023-04-30T12:53:04 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="455" status="FAIL">
+        <test-method signature="testUpdateProduct()[pri:6, instance:testEndPoints.MobileStoreEndPointTests@33a053d]" started-at="2023-04-30T13:18:07 IST" name="testUpdateProduct" finished-at="2023-04-30T13:18:07 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateProduct -->
+        <test-method signature="testDeleteProduct()[pri:7, instance:testEndPoints.MobileStoreEndPointTests@33a053d]" started-at="2023-04-30T13:18:07 IST" name="testDeleteProduct" finished-at="2023-04-30T13:18:08 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="387" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
-Expected status code <200> but was <404>.
+Expected status code <200> but was <502>.
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <404>.
+Expected status code <200> but was <502>.
 
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -234,77 +238,6 @@ at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedCo
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
 at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at testEndPoints.MobileStoreEndPointTests.testUpdateProduct(MobileStoreEndPointTests.java:128)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateProduct -->
-        <test-method signature="testDeleteProduct()[pri:7, instance:testEndPoints.MobileStoreEndPointTests@757f675c]" started-at="2023-04-30T12:53:04 IST" name="testDeleteProduct" finished-at="2023-04-30T12:53:04 IST" depends-on-methods="testEndPoints.MobileStoreEndPointTests.testLoginUser" duration-ms="478" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <502>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <502>.
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)

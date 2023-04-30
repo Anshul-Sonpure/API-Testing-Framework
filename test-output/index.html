@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods, 3 failed,  1 skipped,  10 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,  1 skipped,  11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -109,11 +109,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testEndPoints.MobileStoreEndPointTests" class="method navigator-link" hash-for-method="testDeleteProduct">testDeleteProduct</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testEndPoints.MobileStoreEndPointTests" class="method navigator-link" hash-for-method="testUpdateProduct">testUpdateProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -166,12 +161,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testEndPoints.MobileStoreEndPointTests" class="method navigator-link" hash-for-method="testCreateProducts(Xiaomi 12 Pro 5G, 50000, 150, 3, 3)">testCreateProducts(Xiaomi 12 Pro 5G, 50000, 150, 3, 3)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testEndPoints.MobileStoreEndPointTests" class="method navigator-link" hash-for-method="testCreateProducts(Xiaomi 13 Pro 5G, 70000, 100, 2, 2)">testCreateProducts(Xiaomi 13 Pro 5G, 70000, 100, 2, 2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testEndPoints.MobileStoreEndPointTests" class="method navigator-link" hash-for-method="testCreateProducts(Xiaomi 13 Pro 5G, 70000, 100, 2, 2)">testCreateProducts(Xiaomi 13 Pro 5G, 70000, 100, 2, 2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testEndPoints.MobileStoreEndPointTests" class="method navigator-link" hash-for-method="testCreateProducts(Xiaomi 12 Pro 5G, 50000, 150, 3, 3)">testCreateProducts(Xiaomi 12 Pro 5G, 50000, 150, 3, 3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -187,6 +182,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testEndPoints.MobileStoreEndPointTests" class="method navigator-link" hash-for-method="testRegisterUser">testRegisterUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testEndPoints.MobileStoreEndPointTests" class="method navigator-link" hash-for-method="testUpdateProduct">testUpdateProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -213,7 +213,7 @@
                   </a> <!-- testCreateProducts(Apple Iphone 13, 80000, 200, 1, 2) -->
                   <span class="method-name">testCreateProducts</span>
                   <span class="parameters">(Apple Iphone 13,80000,200,1,2)</span>
-                  <div class="stack-trace">org.awaitility.core.ConditionTimeoutException: Condition with testEndPoints.MobileStoreEndPointTests was not fulfilled within 10 seconds.
+                  <div class="stack-trace">org.awaitility.core.ConditionTimeoutException: Condition with testEndPoints.MobileStoreEndPointTests was not fulfilled within 60 seconds.
 	at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)
 	at org.awaitility.core.CallableCondition.await(CallableCondition.java:79)
 	at org.awaitility.core.CallableCondition.await(CallableCondition.java:27)
@@ -234,6 +234,8 @@
 Expected status code &lt;200&gt; but was &lt;502&gt;.
 
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
@@ -253,36 +255,6 @@ Expected status code &lt;200&gt; but was &lt;502&gt;.
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUpdateProduct">
-                  </a> <!-- testUpdateProduct -->
-                  <span class="method-name">testUpdateProduct</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at testEndPoints.MobileStoreEndPointTests.testUpdateProduct(MobileStoreEndPointTests.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-skipped">
@@ -296,9 +268,9 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
                   <a name="testGetProducts">
                   </a> <!-- testGetProducts -->
                   <span class="method-name">testGetProducts</span>
-                  <div class="stack-trace">java.lang.Throwable: Method testEndPoints.MobileStoreEndPointTests.testGetProducts() on instance testEndPoints.MobileStoreEndPointTests@757f675c depends on not successfully finished methods 
-[testEndPoints.MobileStoreEndPointTests.testLoginUser() on instance testEndPoints.MobileStoreEndPointTests@757f675c
-testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndPoints.MobileStoreEndPointTests@757f675c]
+                  <div class="stack-trace">java.lang.Throwable: Method testEndPoints.MobileStoreEndPointTests.testGetProducts() on instance testEndPoints.MobileStoreEndPointTests@33a053d depends on not successfully finished methods 
+[testEndPoints.MobileStoreEndPointTests.testLoginUser() on instance testEndPoints.MobileStoreEndPointTests@33a053d
+testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndPoints.MobileStoreEndPointTests@33a053d]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 18 stack frames
 </div> <!-- stack-trace -->
@@ -314,18 +286,18 @@ testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndP
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCreateProducts(Xiaomi 12 Pro 5G, 50000, 150, 3, 3)">
-                  </a> <!-- testCreateProducts(Xiaomi 12 Pro 5G, 50000, 150, 3, 3) -->
-                  <span class="method-name">testCreateProducts</span>
-                  <span class="parameters">(Xiaomi 12 Pro 5G,50000,150,3,3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testCreateProducts(Xiaomi 13 Pro 5G, 70000, 100, 2, 2)">
                   </a> <!-- testCreateProducts(Xiaomi 13 Pro 5G, 70000, 100, 2, 2) -->
                   <span class="method-name">testCreateProducts</span>
                   <span class="parameters">(Xiaomi 13 Pro 5G,70000,100,2,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateProducts(Xiaomi 12 Pro 5G, 50000, 150, 3, 3)">
+                  </a> <!-- testCreateProducts(Xiaomi 12 Pro 5G, 50000, 150, 3, 3) -->
+                  <span class="method-name">testCreateProducts</span>
+                  <span class="parameters">(Xiaomi 12 Pro 5G,50000,150,3,3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -347,6 +319,13 @@ testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndP
                   <a name="testRegisterUser">
                   </a> <!-- testRegisterUser -->
                   <span class="method-name">testRegisterUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateProduct">
+                  </a> <!-- testUpdateProduct -->
+                  <span class="method-name">testUpdateProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -454,55 +433,55 @@ data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCreateProducts')
 data.setCell(0, 2, 'testEndPoints.MobileStoreEndPointTests')
-data.setCell(0, 3, 10637);
+data.setCell(0, 3, 60763);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCreateProducts')
 data.setCell(1, 2, 'testEndPoints.MobileStoreEndPointTests')
-data.setCell(1, 3, 6066);
+data.setCell(1, 3, 5813);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testCreateProducts')
 data.setCell(2, 2, 'testEndPoints.MobileStoreEndPointTests')
-data.setCell(2, 3, 5615);
+data.setCell(2, 3, 5624);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TestUserRegister')
 data.setCell(3, 2, 'testEndPoints.AdequateEndpointTests')
-data.setCell(3, 3, 3719);
+data.setCell(3, 3, 4747);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testLoginUser')
 data.setCell(4, 2, 'testEndPoints.MobileStoreEndPointTests')
-data.setCell(4, 3, 1978);
+data.setCell(4, 3, 2027);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testRegisterUser')
+data.setCell(5, 1, 'testGetProduct')
 data.setCell(5, 2, 'testEndPoints.MobileStoreEndPointTests')
-data.setCell(5, 3, 907);
+data.setCell(5, 3, 705);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testGetProduct')
+data.setCell(6, 1, 'testRegisterUser')
 data.setCell(6, 2, 'testEndPoints.MobileStoreEndPointTests')
-data.setCell(6, 3, 725);
+data.setCell(6, 3, 563);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testDeleteProduct')
-data.setCell(7, 2, 'testEndPoints.MobileStoreEndPointTests')
-data.setCell(7, 3, 478);
+data.setCell(7, 1, 'TestValidUserLogin')
+data.setCell(7, 2, 'testEndPoints.AdequateEndpointTests')
+data.setCell(7, 3, 473);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testUpdateProduct')
+data.setCell(8, 1, 'testDeleteProduct')
 data.setCell(8, 2, 'testEndPoints.MobileStoreEndPointTests')
-data.setCell(8, 3, 455);
+data.setCell(8, 3, 387);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TestValidUserLogin')
+data.setCell(9, 1, 'TestCreateUser')
 data.setCell(9, 2, 'testEndPoints.AdequateEndpointTests')
-data.setCell(9, 3, 444);
+data.setCell(9, 3, 382);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TestCreateUser')
-data.setCell(10, 2, 'testEndPoints.AdequateEndpointTests')
-data.setCell(10, 3, 413);
+data.setCell(10, 1, 'testUpdateProduct')
+data.setCell(10, 2, 'testEndPoints.MobileStoreEndPointTests')
+data.setCell(10, 3, 363);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'TestgetUser')
 data.setCell(11, 2, 'testEndPoints.AdequateEndpointTests')
-data.setCell(11, 3, 307);
+data.setCell(11, 3, 339);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'TestInValidUserLogin')
 data.setCell(12, 2, 'testEndPoints.AdequateEndpointTests')
-data.setCell(12, 3, 292);
+data.setCell(12, 3, 308);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'testGetProducts')
 data.setCell(13, 2, 'testEndPoints.MobileStoreEndPointTests')
@@ -511,7 +490,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -544,64 +523,62 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestValidUserLogin</span>
-                <span class="method-start">3736 ms</span>
+                <span class="method-start">4756 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCreateUser</span>
-                <span class="method-start">4182 ms</span>
+                <span class="method-start">5240 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestgetUser</span>
-                <span class="method-start">4597 ms</span>
+                <span class="method-start">5626 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestInValidUserLogin</span>
-                <span class="method-start">4909 ms</span>
+                <span class="method-start">5969 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testEndPoints.MobileStoreEndPointTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testLoginUser</span>
-                <span class="method-start">5204 ms</span>
+                <span class="method-start">6280 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testRegisterUser</span>
-                <span class="method-start">7186 ms</span>
+                <span class="method-start">8313 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCreateProducts(Apple Iphone 13, 80000, 200, 1, 2)</span>
-                <span class="method-start">8993 ms</span>
+                <span class="method-start">9800 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCreateProducts(Xiaomi 12 Pro 5G, 50000, 150, 3, 3)</span>
-                <span class="method-start">19639 ms</span>
+                <span class="method-start">70569 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCreateProducts(Xiaomi 13 Pro 5G, 70000, 100, 2, 2)</span>
-                <span class="method-start">25262 ms</span>
+                <span class="method-start">76196 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetProducts</span>
-                <span class="method-start">31341 ms</span>
+                <span class="method-start">82021 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetProduct</span>
-                <span class="method-start">31355 ms</span>
+                <span class="method-start">82031 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testUpdateProduct</span>
-                <span class="method-start">32088 ms</span>
+                <span class="method-start">82740 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testDeleteProduct</span>
-                <span class="method-start">32551 ms</span>
+                <span class="method-start">83105 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

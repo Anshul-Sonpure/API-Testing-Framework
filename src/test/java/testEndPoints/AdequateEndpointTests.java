@@ -12,13 +12,17 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.CodeLanguage;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.github.javafaker.Faker;
 
 import adequateShopEndPoints.AdequateEndpoints;
 import io.restassured.response.Response;
 import payload.User;
+import utilities.ListenerTest;
 
-public class AdequateEndpointTests {
+public class AdequateEndpointTests extends ListenerTest {
 
 	
 	static Faker faker = new Faker();
@@ -51,6 +55,8 @@ public class AdequateEndpointTests {
         fWriter.close();
       
         loger.log(Level.INFO, "*****User Details Saved to RegisterUser.txt *****");
+        extentTest.info("Response body:");
+        extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(response.asPrettyString(), CodeLanguage.JSON));
     }
     
     
@@ -79,6 +85,8 @@ public class AdequateEndpointTests {
 
         fWriter.close();
         loger.log(Level.INFO, "*****User Details Saved to loginUser.txt *****");
+        extentTest.info("Response body:");
+        extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(response.asPrettyString(), CodeLanguage.JSON));
     }
     
     
@@ -92,6 +100,8 @@ public class AdequateEndpointTests {
     	Assert.assertEquals(response.statusCode(),200);
     	Assert.assertEquals(response.body().path("message"), "invalid username or password");
     	loger.log(Level.INFO, "*****Validated Invalid User Login *****");
+    	extentTest.info("Response body:");
+    	extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(response.asPrettyString(), CodeLanguage.JSON));
     }
     
     @Test(priority=3)
@@ -111,6 +121,8 @@ public class AdequateEndpointTests {
 
         fWriter.close();
         loger.log(Level.INFO, "*****User Details Saved to createUser *****");
+        extentTest.info("Response body:");
+        extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(response.asPrettyString(), CodeLanguage.JSON));
     }
     
     @Test(priority=4)
@@ -125,6 +137,8 @@ public class AdequateEndpointTests {
     	Assert.assertEquals(response.body().path("id").toString(),userid);
     	Assert.assertEquals(response.body().path("email").toString(),email);
     	 loger.log(Level.INFO, "*****Validated getUser*****");
+    	 extentTest.info("Response body:");
+    	 extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(response.asPrettyString(), CodeLanguage.JSON));
     }
     
     

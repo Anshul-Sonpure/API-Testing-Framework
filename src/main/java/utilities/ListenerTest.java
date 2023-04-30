@@ -12,7 +12,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 
-public class ListenerTest implements ITestListener  {
+public class ListenerTest implements ITestListener {
     public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     public static ExtentReports extent = ExtentSetup.initExtent();
     public static ExtentTest extentTest;
@@ -23,16 +23,19 @@ public class ListenerTest implements ITestListener  {
     public void onTestStart(ITestResult result) {
        
         String classname = result.getTestClass().getName();
-        classname=classname.replace("testSauceDemo.","");
-         extentTest = extent.createTest(classname)
+        String method = result.getMethod().getMethodName();
+        classname=classname.replace("testEndPoints.","");
+         extentTest = extent.createTest(classname+method)
                  .createNode(result.getMethod().getMethodName())
                  .assignAuthor(System.getProperty("user.name"));
          test.set(extentTest);
+         
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
         test.get().log(Status.PASS,"Test Case: "+result.getMethod().getMethodName()+ " is passed.");
+        
     }
 
     @Override

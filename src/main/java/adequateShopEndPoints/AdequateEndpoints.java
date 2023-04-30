@@ -4,7 +4,6 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import payload.User;
 import routes.Routes;
-
 import static io.restassured.RestAssured.given;
 
 import java.io.IOException;
@@ -18,6 +17,7 @@ public class AdequateEndpoints {
 	public static Response registerUser(User payload) {
 		Response response = given().contentType(ContentType.JSON).body(payload).when().post(Routes.registration_url);
 		return response;
+		
 	}
 
 	public static Response loginUser(User payload) {
