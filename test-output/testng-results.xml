@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-30T11:46:34 IST" name="Default suite" finished-at="2023-04-30T11:46:38 IST" duration-ms="4893">
+    <groups>
+    </groups>
+    <test started-at="2023-04-30T11:46:34 IST" name="Default test" finished-at="2023-04-30T11:46:38 IST" duration-ms="4893">
+      <class name="testEndPoints.AdequateEndpointTests">
+        <test-method signature="TestCreateUser()[pri:3, instance:testEndPoints.AdequateEndpointTests@25f7391e]" started-at="2023-04-30T11:46:34 IST" name="TestCreateUser" finished-at="2023-04-30T11:46:38 IST" duration-ms="4835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCreateUser -->
+      </class> <!-- testEndPoints.AdequateEndpointTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

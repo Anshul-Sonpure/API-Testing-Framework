@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="logPath">./logs</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="file" fileName="Logs/adequate.log"
+			filePattern="logs/logdemo-%d{HH-mm-ss-SSS}.log">
+			<PatternLayout>
+				<pattern>%d{HH:mm:ss}[%t] %-5level %logger{36} - %msg%n </pattern>
+			</PatternLayout>
+			<SizeBasedTriggeringPolicy size="500 KB" />
+		</RollingFile>
+
+<RollingFile name="file2" fileName="Logs/mobilestore.log"
+			filePattern="logs/logdemo-%d{HH-mm-ss-SSS}.log">
+			<PatternLayout>
+				<pattern>%d{HH:mm:ss}[%t] %-5level %logger{36} - %msg%n </pattern>
+			</PatternLayout>
+			<SizeBasedTriggeringPolicy size="500 KB" />
+		</RollingFile>
+		
+		
+	
+
+	</Appenders>
+	<Loggers>
+		<Logger name="adequate" level="info" additivity="false">
+			<!-- <AppenderRef ref="console" /> -->
+			<AppenderRef ref="file" />
+		</Logger>
+		
+	
+		<Logger name="mobilestore" level="info" additivity="false">
+		
+			<AppenderRef ref="file2" />
+		</Logger>
+		  <Root level="info">
+           <AppenderRef ref="file2" />
+            <AppenderRef ref="file" />
+        </Root>
+		
+	</Loggers>
+</Configuration>

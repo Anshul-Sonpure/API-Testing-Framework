@@ -1,0 +1,54 @@
+11:41:48[main] INFO  mobilestore - *****testLoginUser*****
+11:41:52[main] INFO  mobilestore - *****Validated Status Code for Login User *****
+11:41:53[main] INFO  mobilestore - Date=Sun, 30 Apr 2023 06:11:52 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=213
+Connection=keep-alive
+CF-Ray=7bfda13b2a00f31b-BOM
+Cache-Control=no-cache
+Content-Encoding=gzip
+ETag=W/"d7-TbwpmgBE4fRsm9yRhz2jpDo4lQo"
+Expires=-1
+Vary=Accept-Encoding
+CF-Cache-Status=DYNAMIC
+access-control-allow-credentials=true
+pragma=no-cache
+x-powered-by=Express
+x-render-origin-server=Render
+Set-Cookie=__cf_bm=usiewdf0Wu_un7pNuPsMolhp1TwKSPgTLCM8Payn.4Q-1682835112-0-AcECHsLUoIcpZev8m6YrP4zkkx2JmRzUyJbQPTYgAy2g+d+IZ05f4kxSFgxsRY3p4v3GvHBDh7KdJoNsY9Zy2cg=; path=/; expires=Sun, 30-Apr-23 06:41:52 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None
+Server=cloudflare
+alt-svc=h3=":443"; ma=86400, h3-29=":443"; ma=86400
+11:41:53[main] INFO  mobilestore - {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pbHNvbkBlbWFpbC5jb20iLCJwYXNzd29yZCI6Im5pbHNvbiIsImlhdCI6MTY4MjgzNTExMiwiZXhwIjoxNjgyODM4NzEyfQ.i_v6FF8QyVIgwY-xZNAi-20yb4euaIEwvNXITJbBGlE"
+}
+11:41:53[main] INFO  mobilestore - *****Login Token for Saved at /src/test/resources/loginToken.txt*****
+11:41:54[main] INFO  mobilestore - *****testCreateProducts*****
+11:42:00[main] INFO  mobilestore - *****Validated Status Code for create Products *****
+11:42:00[main] INFO  mobilestore - {
+    "name": "Apple Iphone 13",
+    "dealerId": "2",
+    "quantity": "200",
+    "locationId": "1",
+    "cost": "80000",
+    "id": 7
+}
+11:42:00[main] INFO  mobilestore - *****testCreateProducts*****
+11:42:05[main] INFO  mobilestore - *****Validated Status Code for create Products *****
+11:42:05[main] INFO  mobilestore - {
+    "name": "Xiaomi 12 Pro 5G",
+    "dealerId": "3",
+    "quantity": "150",
+    "locationId": "3",
+    "cost": "50000",
+    "id": 8
+}
+11:42:05[main] INFO  mobilestore - *****testCreateProducts*****
+11:42:11[main] INFO  mobilestore - *****Validated Status Code for create Products *****
+11:42:11[main] INFO  mobilestore - {
+    "name": "Xiaomi 13 Pro 5G",
+    "dealerId": "2",
+    "quantity": "100",
+    "locationId": "2",
+    "cost": "70000",
+    "id": 9
+}
