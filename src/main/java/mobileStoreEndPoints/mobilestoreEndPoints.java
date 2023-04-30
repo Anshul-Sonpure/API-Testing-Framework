@@ -8,15 +8,20 @@ import java.util.ResourceBundle;
 
 import org.json.JSONObject;
 
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.CodeLanguage;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import payload.Products;
 import payload.User;
 import utilities.ExcelUtil;
+import utilities.ListenerTest;
 
 import static io.restassured.RestAssured.given;
 
-public class mobilestoreEndPoints {
+public class mobilestoreEndPoints extends ListenerTest {
 
 	static String path = "./src/test/resources/mobilestoreTestData.xlsx";
 	static ExcelUtil xl = new ExcelUtil(path);
@@ -36,7 +41,17 @@ public class mobilestoreEndPoints {
 		payload.put("password", password);
 		String loginurl = getUrl().getString("login_url");
 		Response response = given().contentType(ContentType.JSON).body(payload.toString()).when().post(loginurl);
+		
+		extentTest.info("Request body:");
+        extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(payload.toString(), CodeLanguage.JSON));
+		
+		extentTest.info("Response body:");
+        extentTest.log(Status.PASS,MarkupHelper.createCodeBlock(response.asPrettyString(), CodeLanguage.JSON));
+		
+		
 		return response;
+		
+		
 	}
 	
 	public static Response registerUser(User payload) throws IOException {
@@ -48,6 +63,7 @@ public class mobilestoreEndPoints {
 				 .body(payload)
 				 .when()
 				 .post(regitserurl);
+		
 		return response;
 	}
 
@@ -60,7 +76,7 @@ public class mobilestoreEndPoints {
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
 				.body(payload).when().post(posturl);
-		
+	
 		return response;
 
 	}
@@ -75,6 +91,8 @@ public class mobilestoreEndPoints {
 				.contentType(ContentType.JSON)
 				.param("name",name)
 				.get(getProducts);
+		
+		
 		return response;
 
 	}
