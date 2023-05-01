@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="utilities.ListenerTest"/>
-  </listeners>
-  <test thread-count="5" parallel="classes" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testEndPoints.MobileStoreEndPointTests">
+      <class name="testEndPoints.test">
         <methods>
-          <include name="testDeleteProduct"/>
-          <include name="testGetProducts"/>
-          <include name="testCreateProducts" invocation-numbers="0"/>
-          <include name="testLoginUser"/>
+          <include name="testCreateProducts" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- testEndPoints.MobileStoreEndPointTests -->
-      <class name="testEndPoints.AdequateEndpointTests">
-        <methods>
-          <include name="TestValidUserLogin"/>
-        </methods>
-      </class> <!-- testEndPoints.AdequateEndpointTests -->
+      </class> <!-- testEndPoints.test -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

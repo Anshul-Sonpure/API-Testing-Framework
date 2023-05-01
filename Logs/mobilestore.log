@@ -190,3 +190,4 @@ Server=cloudflare
 alt-svc=h3=":443"; ma=86400, h3-29=":443"; ma=86400
 23:56:15[TestNG-test=Test-2] INFO  mobilestore - ======Response Body====
 23:56:15[TestNG-test=Test-2] INFO  mobilestore - *****testDeleteProduct*****
+09:50:40[main] INFO  mobilestore - *****testLoginUser*****

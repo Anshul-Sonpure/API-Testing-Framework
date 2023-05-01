@@ -1,6 +1,5 @@
 package testEndPoints;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ResourceBundle;
 
@@ -10,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.awaitility.Awaitility;
 import org.awaitility.Duration;
 import org.testng.annotations.Test;
-
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.*;
 
 import com.aventstack.extentreports.Status;
@@ -18,7 +17,6 @@ import com.aventstack.extentreports.markuputils.CodeLanguage;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.github.javafaker.Faker;
 
-import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import mobileStoreEndPoints.mobilestoreEndPoints;
 import payload.Products;
@@ -109,8 +107,13 @@ public class MobileStoreEndPointTests extends ListenerTest{
         .until(() -> response.statusCode() == 201);
 		
 		response.then().log().all();
+		
+		 response.then().assertThat().body(matchesJsonSchemaInClasspath("product-schema.json"));
+		
+		
 		loger.log(Level.INFO, "*****Validated Status Code for create Products *****", lineSeparator);
 		loger.log(Level.INFO, response.body().asPrettyString(),lineSeparator);
+		
 		
 		extentTest.info("Request Body send:\n"+prod);
 		

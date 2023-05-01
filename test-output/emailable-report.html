@@ -8,68 +8,13 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">29,610</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,621</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testEndPoints.AdequateEndpointTests</td><td><a href="#m0">TestValidUserLogin</a></td><td rowspan="1">1682879151112</td><td rowspan="1">404</td></tr><tr class="failedodd"><td rowspan="2">testEndPoints.MobileStoreEndPointTests</td><td><a href="#m1">testCreateProducts</a></td><td rowspan="1">1682879152519</td><td rowspan="1">10620</td></tr><tr class="failedodd"><td><a href="#m2">testDeleteProduct</a></td><td rowspan="1">1682879175412</td><td rowspan="1">434</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testEndPoints.MobileStoreEndPointTests</td><td><a href="#m3">testGetProducts</a></td><td rowspan="1">1682879175851</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">testEndPoints.AdequateEndpointTests</td><td><a href="#m4">TestCreateUser</a></td><td rowspan="1">1682879151527</td><td rowspan="1">433</td></tr><tr class="passedeven"><td><a href="#m5">TestInValidUserLogin</a></td><td rowspan="1">1682879152385</td><td rowspan="1">309</td></tr><tr class="passedeven"><td><a href="#m6">TestUserRegister</a></td><td rowspan="1">1682879146324</td><td rowspan="1">4775</td></tr><tr class="passedeven"><td><a href="#m7">TestgetUser</a></td><td rowspan="1">1682879151967</td><td rowspan="1">416</td></tr><tr class="passedodd"><td rowspan="6">testEndPoints.MobileStoreEndPointTests</td><td><a href="#m8">testCreateProducts</a></td><td rowspan="2">1682879168927</td><td rowspan="2">5495</td></tr><tr class="passedodd"><td><a href="#m9">testCreateProducts</a></td></tr><tr class="passedodd"><td><a href="#m10">testGetProduct</a></td><td rowspan="1">1682879174433</td><td rowspan="1">577</td></tr><tr class="passedodd"><td><a href="#m11">testLoginUser</a></td><td rowspan="1">1682879146324</td><td rowspan="1">4617</td></tr><tr class="passedodd"><td><a href="#m12">testRegisterUser</a></td><td rowspan="1">1682879150956</td><td rowspan="1">758</td></tr><tr class="passedodd"><td><a href="#m13">testUpdateProduct</a></td><td rowspan="1">1682879175018</td><td rowspan="1">392</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testEndPoints.test</td><td><a href="#m0">testCreateProducts</a></td><td rowspan="3">1682916973141</td><td rowspan="3">5694</td></tr><tr class="passedeven"><td><a href="#m1">testCreateProducts</a></td></tr><tr class="passedeven"><td><a href="#m2">testCreateProducts</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testEndPoints.AdequateEndpointTests#TestValidUserLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [success] but found [invalid username or password]
-	at testEndPoints.AdequateEndpointTests.TestValidUserLogin(AdequateEndpointTests.java:88)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testEndPoints.MobileStoreEndPointTests#testCreateProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Apple Iphone 13</td><td>80000</td><td>200</td><td>1</td><td>2</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.awaitility.core.ConditionTimeoutException: Condition with testEndPoints.MobileStoreEndPointTests was not fulfilled within 10 seconds.
-	at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)
-	at org.awaitility.core.CallableCondition.await(CallableCondition.java:79)
-	at org.awaitility.core.CallableCondition.await(CallableCondition.java:27)
-	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)
-	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:802)
-	at testEndPoints.MobileStoreEndPointTests.testCreateProducts(MobileStoreEndPointTests.java:109)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testEndPoints.MobileStoreEndPointTests#testDeleteProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;502&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at testEndPoints.MobileStoreEndPointTests.testDeleteProduct(MobileStoreEndPointTests.java:187)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testEndPoints.MobileStoreEndPointTests#testGetProducts</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method testEndPoints.MobileStoreEndPointTests.testGetProducts() on instance testEndPoints.MobileStoreEndPointTests@33a053d depends on not successfully finished methods 
-[testEndPoints.MobileStoreEndPointTests.testLoginUser() on instance testEndPoints.MobileStoreEndPointTests@33a053d
-testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndPoints.MobileStoreEndPointTests@33a053d]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testEndPoints.AdequateEndpointTests#TestCreateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testEndPoints.AdequateEndpointTests#TestInValidUserLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testEndPoints.AdequateEndpointTests#TestUserRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testEndPoints.AdequateEndpointTests#TestgetUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testEndPoints.MobileStoreEndPointTests#testCreateProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Xiaomi 13 Pro 5G</td><td>70000</td><td>100</td><td>2</td><td>2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">testEndPoints.MobileStoreEndPointTests#testCreateProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Xiaomi 12 Pro 5G</td><td>50000</td><td>150</td><td>3</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">testEndPoints.MobileStoreEndPointTests#testGetProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">testEndPoints.MobileStoreEndPointTests#testLoginUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">testEndPoints.MobileStoreEndPointTests#testRegisterUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">testEndPoints.MobileStoreEndPointTests#testUpdateProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">testEndPoints.test#testCreateProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Xiaomi 12 Pro 5G</td><td>50000</td><td>150</td><td>3</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testEndPoints.test#testCreateProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Xiaomi 13 Pro 5G</td><td>70000</td><td>100</td><td>2</td><td>2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testEndPoints.test#testCreateProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Apple Iphone 13</td><td>80000</td><td>200</td><td>1</td><td>2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
