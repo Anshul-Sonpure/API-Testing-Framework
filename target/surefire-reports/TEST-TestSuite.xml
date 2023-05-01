@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="89.855" tests="14" errors="0" skipped="1" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Darkprime\Documents\Eclipse_Selenium4\apitestingframework\target\test-classes;C:\Users\Darkprime\Documents\Eclipse_Selenium4\apitestingframework\target\classes;C:\Users\Darkprime\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Darkprime\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Darkprime\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Darkprime\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Darkprime\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Darkprime\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Darkprime\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Darkprime\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Darkprime\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Darkprime\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Darkprime\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Darkprime\.m2\repository\org\json\json\20230227\json-20230227.jar;C:\Users\Darkprime\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Darkprime\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Darkprime\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Darkprime\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Darkprime\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Darkprime\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Darkprime\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Darkprime\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Darkprime\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\Darkprime\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Darkprime\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Darkprime\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Darkprime\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Darkprime\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Darkprime\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Darkprime\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Darkprime\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Darkprime\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Darkprime\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Darkprime\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Darkprime\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Darkprime\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Darkprime\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Darkprime\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Darkprime\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Darkprime\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Darkprime\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Darkprime\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Darkprime\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Darkprime\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Darkprime\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Darkprime\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Darkprime\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Darkprime\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Darkprime\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Darkprime\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Darkprime\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Darkprime\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Darkprime\.m2\repository\org\awaitility\awaitility\3.0.0\awaitility-3.0.0.jar;C:\Users\Darkprime\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\Darkprime\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Darkprime\.m2\repository\org\objenesis\objenesis\2.5.1\objenesis-2.5.1.jar;C:\Users\Darkprime\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Darkprime\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\Darkprime\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.11\bin"/>
+    <property name="sun.java.command" value="C:\Users\Darkprime\AppData\Local\Temp\surefire13060991724287413797\surefirebooter-20230501114145555_3.jar C:\Users\Darkprime\AppData\Local\Temp\surefire13060991724287413797 2023-05-01T11-41-45_326-jvmRun1 surefire-20230501114145555_1tmp surefire_0-20230501114145555_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Darkprime\Documents\Eclipse_Selenium4\apitestingframework\target\test-classes;C:\Users\Darkprime\Documents\Eclipse_Selenium4\apitestingframework\target\classes;C:\Users\Darkprime\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Darkprime\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Darkprime\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Darkprime\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Darkprime\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Darkprime\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Darkprime\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Darkprime\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Darkprime\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Darkprime\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Darkprime\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Darkprime\.m2\repository\org\json\json\20230227\json-20230227.jar;C:\Users\Darkprime\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Darkprime\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Darkprime\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Darkprime\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Darkprime\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Darkprime\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Darkprime\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Darkprime\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Darkprime\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\Darkprime\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Darkprime\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Darkprime\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Darkprime\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Darkprime\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Darkprime\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Darkprime\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Darkprime\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Darkprime\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Darkprime\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Darkprime\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Darkprime\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Darkprime\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Darkprime\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Darkprime\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Darkprime\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Darkprime\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Darkprime\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Darkprime\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Darkprime\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Darkprime\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Darkprime\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Darkprime\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Darkprime\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Darkprime\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Darkprime\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Darkprime\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Darkprime\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Darkprime\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Darkprime\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Darkprime\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Darkprime\.m2\repository\org\awaitility\awaitility\3.0.0\awaitility-3.0.0.jar;C:\Users\Darkprime\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\Darkprime\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Darkprime\.m2\repository\org\objenesis\objenesis\2.5.1\objenesis-2.5.1.jar;C:\Users\Darkprime\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\Darkprime\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\Darkprime\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Darkprime"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Darkprime\Documents\Eclipse_Selenium4\apitestingframework"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Darkprime\AppData\Local\Temp\surefire13060991724287413797\surefirebooter-20230501114145555_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.11+9-LTS-194"/>
+    <property name="user.name" value="Darkprime"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Darkprime\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DARKPR~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="user.dir" value="C:\Users\Darkprime\Documents\Eclipse_Selenium4\apitestingframework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-11.0.11\bin;C:\Users\Darkprime\Downloads\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\nodejs;C:\Program Files\heroku\bin;C:\apache-maven-3.9.1-bin\bin;C:\Users\Darkprime\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Darkprime\AppData\Local\Programs\Python\Python39\;C:\Users\Darkprime\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Darkprime\AppData\Local\Microsoft\WindowsApps;C:\Users\Darkprime\AppData\Roaming\npm;C:\Program Files\Git\bin;C:\Program Files\Git\cmd;C:\Users\Darkprime\AppData\Local\GitHubDesktop\bin;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\nodejs;C:\Program Files\heroku\bin;C:\Program Files\apache-maven-3.8.4\bin;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2023.1\bin;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.11+9-LTS-194"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="TestUserRegister" classname="testEndPoints.AdequateEndpointTests" time="5.977">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Mon, 01 May 2023 06:11:54 GMT
+Content-Length: 150
+
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "Id": 229077,
+        "Name": "Aaron Kozey",
+        "Email": "sung.grady@yahoo.com",
+        "Token": "039d5b9a-adb4-4bc8-8d00-a7d8730040cd"
+    }
+}
+Data written to file: ./AdequateData/RegisterUser.txt
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="TestValidUserLogin" classname="testEndPoints.AdequateEndpointTests" time="0.497">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Mon, 01 May 2023 06:11:57 GMT
+Content-Length: 150
+
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "Id": 229077,
+        "Name": "Aaron Kozey",
+        "Email": "sung.grady@yahoo.com",
+        "Token": "35e53dfe-e2e8-4bf6-b887-676c65b7369a"
+    }
+}
+Data written to file: ./AdequateData/loginUser.txt
+]]></system-out>
+  </testcase>
+  <testcase name="TestCreateUser" classname="testEndPoints.AdequateEndpointTests" time="0.499">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Location: http://restapi.adequateshop.com/api/users/229078
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Mon, 01 May 2023 06:11:57 GMT
+Content-Length: 219
+
+{
+    "id": 229078,
+    "name": "Elda Roob",
+    "email": "carmine.olson@gmail.com",
+    "profilepicture": "http://restapi.adequateshop.com/Media//Images/userimageicon.png",
+    "location": "East Shirlene",
+    "createdat": "2023-05-01T06:11:57.6510333Z"
+}
+Data written to file: ./AdequateData/createUser.txt
+]]></system-out>
+  </testcase>
+  <testcase name="TestgetUser" classname="testEndPoints.AdequateEndpointTests" time="0.315"/>
+  <testcase name="TestInValidUserLogin" classname="testEndPoints.AdequateEndpointTests" time="0.271">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Mon, 01 May 2023 06:11:58 GMT
+Content-Length: 63
+
+{
+    "code": 1,
+    "message": "invalid username or password",
+    "data": null
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginUser" classname="testEndPoints.MobileStoreEndPointTests" time="53.77">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Mon, 01 May 2023 06:12:51 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 213
+Connection: keep-alive
+CF-Ray: 7c05deb5ccd06efe-BOM
+Cache-Control: no-cache
+Content-Encoding: gzip
+ETag: W/"d7-mUfYkVMBQ3EoEepmK2iPVM+LACY"
+Expires: -1
+Vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+access-control-allow-credentials: true
+pragma: no-cache
+x-powered-by: Express
+x-render-origin-server: Render
+Set-Cookie: __cf_bm=Jhwicpa4vVVN1cBo3pAx0av8ROcTPMW6XaazZ_b5uac-1682921571-0-ATdf+JXnyx+vgrQwj8hL4vRUSd0XHdQjwzXsZ9y0bxtjx04S9WHoAYmowWObK+wzerJ1ICFBqMfJFt2sePq3dpE=; path=/; expires=Mon, 01-May-23 06:42:51 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pbHNvbkBlbWFpbC5jb20iLCJwYXNzd29yZCI6Im5pbHNvbiIsImlhdCI6MTY4MjkyMTU3MSwiZXhwIjoxNjgyOTI1MTcxfQ.65yNWDIu6iEYnLEIC95e_4KyOeup8iHOU1kwowYs2Qc"
+}
+Data written to file: ./src/test/resources/loginToken.txt
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterUser" classname="testEndPoints.MobileStoreEndPointTests" time="0.781">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Mon, 01 May 2023 06:12:52 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 232
+Connection: keep-alive
+CF-Ray: 7c05e0128dd7f363-BOM
+Cache-Control: no-cache
+Content-Encoding: gzip
+ETag: W/"eb-F4jk6YYQBTpLsjqQKoHFiCSWeDs"
+Expires: -1
+Vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+access-control-allow-credentials: true
+pragma: no-cache
+x-powered-by: Express
+x-render-origin-server: Render
+Set-Cookie: __cf_bm=g4q.ojLiv6tdW7HY1MJoX2eBqBwD3ItkLpuhuQ53UQY-1682921572-0-ATyd83v+Vr1gjLqb2SmY5ZrGhU9r0qnoZBK0Wj+pRPVxR+lpjSSz8PdF3pYKX8lHwDk/5swzyrOmRftDbdP4K4Y=; path=/; expires=Mon, 01-May-23 06:42:52 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx5ZGEubGFiYWRpZUBnbWFpbC5jb20iLCJwYXNzd29yZCI6Inpmc2VwZTZub2w0c3h1biIsImlhdCI6MTY4MjkyMTU3MiwiZXhwIjoxNjgyOTI1MTcyfQ.ZnSo0f6Im3pKRNPDMio_NtsHQLaNNc2bzobWJ9jUUJU"
+}
+Data written to file: ./src/test/resources/loginToken.txt
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateProducts[Apple Iphone 13, 80000, 200, 1, 2](1)" classname="testEndPoints.MobileStoreEndPointTests" time="10.702">
+    <failure message="Condition with lambda expression in testEndPoints.MobileStoreEndPointTests that uses io.restassured.response.Response was not fulfilled within 10 seconds." type="org.awaitility.core.ConditionTimeoutException"><![CDATA[org.awaitility.core.ConditionTimeoutException: Condition with lambda expression in testEndPoints.MobileStoreEndPointTests that uses io.restassured.response.Response was not fulfilled within 10 seconds.
+	at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)
+	at org.awaitility.core.CallableCondition.await(CallableCondition.java:79)
+	at org.awaitility.core.CallableCondition.await(CallableCondition.java:27)
+	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)
+	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:802)
+	at testEndPoints.MobileStoreEndPointTests.testCreateProducts(MobileStoreEndPointTests.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></failure>
+  </testcase>
+  <testcase name="testCreateProducts[Xiaomi 12 Pro 5G, 50000, 150, 3, 3](2)" classname="testEndPoints.MobileStoreEndPointTests" time="6.098">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Date: Mon, 01 May 2023 06:13:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 112
+Connection: keep-alive
+Location: http://mobilestore-c8yg.onrender.com/products/9
+CF-Ray: 7c05e05ea80484dd-BOM
+Cache-Control: no-cache
+Content-Encoding: gzip
+ETag: W/"7b-NQ0laFz88N9x/vF5uMr5FbG7T1I"
+Expires: -1
+Vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+access-control-allow-credentials: true
+access-control-expose-headers: Location
+pragma: no-cache
+x-content-type-options: nosniff
+x-powered-by: Express
+x-render-origin-server: Render
+Set-Cookie: __cf_bm=HtlPZmWztnLRIx2mhpTA0tkeCuWYVpbbjNgtxi2Ke8A-1682921584-0-AfINdC3B1eXs39vE/UOep6Z2IANjAtH+0V49s3SNTD4r5l8myIhf2uoV3TaH6/PkpC7WC6t0j0WeW4ONqcKev24=; path=/; expires=Mon, 01-May-23 06:43:04 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "name": "Xiaomi 12 Pro 5G",
+    "dealerId": "3",
+    "cost": "50000",
+    "locationId": "3",
+    "quantity": "150",
+    "id": 9
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateProducts[Xiaomi 13 Pro 5G, 70000, 100, 2, 2](3)" classname="testEndPoints.MobileStoreEndPointTests" time="5.786">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Date: Mon, 01 May 2023 06:13:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 112
+Connection: keep-alive
+Location: http://mobilestore-c8yg.onrender.com/products/10
+CF-Ray: 7c05e0855b8f6ed7-BOM
+Cache-Control: no-cache
+Content-Encoding: gzip
+ETag: W/"7c-WDg8+040It1DseKvaWr4V36psxA"
+Expires: -1
+Vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+access-control-allow-credentials: true
+access-control-expose-headers: Location
+pragma: no-cache
+x-content-type-options: nosniff
+x-powered-by: Express
+x-render-origin-server: Render
+Set-Cookie: __cf_bm=RKwhtiVLOvjuQryFRfvhUEOKIXUo0gyCcM70qeQj7AA-1682921591-0-Aepu+pjSfH3N6UCQWJX/UeLhSREE6aCvU32vsk8gD0EbYPY2kRr3RRKY9Mt+NFR08aJiXjMNnJ1flujUmmZTChA=; path=/; expires=Mon, 01-May-23 06:43:11 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "name": "Xiaomi 13 Pro 5G",
+    "dealerId": "2",
+    "cost": "70000",
+    "locationId": "2",
+    "quantity": "100",
+    "id": 10
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProduct" classname="testEndPoints.MobileStoreEndPointTests" time="0.457"/>
+  <testcase name="testUpdateProduct" classname="testEndPoints.MobileStoreEndPointTests" time="0.377"/>
+  <testcase name="testDeleteProduct" classname="testEndPoints.MobileStoreEndPointTests" time="0.489">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;502&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <502>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at testEndPoints.MobileStoreEndPointTests.testDeleteProduct(MobileStoreEndPointTests.java:190)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></failure>
+  </testcase>
+  <testcase name="testGetProducts" classname="testEndPoints.MobileStoreEndPointTests" time="0">
+    <skipped message="Method testEndPoints.MobileStoreEndPointTests.testGetProducts() on instance testEndPoints.MobileStoreEndPointTests@50b1f030 depends on not successfully finished methods &#10;[testEndPoints.MobileStoreEndPointTests.testLoginUser() on instance testEndPoints.MobileStoreEndPointTests@50b1f030&#10;testEndPoints.MobileStoreEndPointTests.testCreateProducts() on instance testEndPoints.MobileStoreEndPointTests@50b1f030]"/>
+  </testcase>
+</testsuite>

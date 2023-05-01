@@ -1,0 +1,10 @@
+adequateShopEndPoints\AdequateEndpoints.class
+payload\Products.class
+mobileStoreEndPoints\mobilestoreEndPoints.class
+utilities\ListenerTest.class
+utilities\ExcelUtil.class
+routes\Routes.class
+utilities\DataProviders.class
+payload\User.class
+utilities\ExtentSetup.class
+utilities\FileUtil.class

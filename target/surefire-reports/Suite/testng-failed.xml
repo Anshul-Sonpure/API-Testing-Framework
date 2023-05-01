@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="testEndPoints.MobileStoreEndPointTests">
+        <methods>
+          <include name="testDeleteProduct"/>
+          <include name="testGetProducts"/>
+          <include name="testLoginUser"/>
+          <include name="testCreateProducts" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testEndPoints.MobileStoreEndPointTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
