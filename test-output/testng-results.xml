@@ -1,106 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-01T10:26:02 IST" name="Default suite" finished-at="2023-05-01T10:26:24 IST" duration-ms="22621">
+  <suite started-at="2023-05-03T14:08:59 IST" name="Default suite" finished-at="2023-05-03T14:09:03 IST" duration-ms="3191">
     <groups>
     </groups>
-    <test started-at="2023-05-01T10:26:02 IST" name="Default test" finished-at="2023-05-01T10:26:24 IST" duration-ms="22621">
-      <class name="testEndPoints.test">
-        <test-method signature="testCreateProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testEndPoints.test@ce5a68e]" started-at="2023-05-01T10:26:03 IST" name="testCreateProducts" data-provider="Data" finished-at="2023-05-01T10:26:13 IST" duration-ms="9297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Apple Iphone 13]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[80000]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[200]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-05-03T14:08:59 IST" name="Default test" finished-at="2023-05-03T14:09:03 IST" duration-ms="3191">
+      <class name="testEndPoints.APITestScript">
+        <test-method signature="testPostRequest()[pri:0, instance:testEndPoints.APITestScript@58695725]" started-at="2023-05-03T14:08:59 IST" name="testPostRequest" finished-at="2023-05-03T14:09:03 IST" duration-ms="3096" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateProducts -->
-        <test-method signature="testCreateProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testEndPoints.test@ce5a68e]" started-at="2023-05-01T10:26:13 IST" name="testCreateProducts" data-provider="Data" finished-at="2023-05-01T10:26:18 IST" duration-ms="5694" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Xiaomi 12 Pro 5G]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[50000]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[150]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateProducts -->
-        <test-method signature="testCreateProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testEndPoints.test@ce5a68e]" started-at="2023-05-01T10:26:18 IST" name="testCreateProducts" data-provider="Data" finished-at="2023-05-01T10:26:24 IST" duration-ms="5789" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Xiaomi 13 Pro 5G]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[70000]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateProducts -->
-      </class> <!-- testEndPoints.test -->
+        </test-method> <!-- testPostRequest -->
+      </class> <!-- testEndPoints.APITestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
